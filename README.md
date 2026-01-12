@@ -30,6 +30,26 @@ To run the FastAPI server using Docker, follow these steps:
 
 - The FastAPI server should now be running. You can access at port `8000`.
 
+## Node (JavaScript) Server
+
+A simple Express server is included under `node-server/`. It listens on port `8001` and provides the same task routes as the Python server.
+
+- To run locally with Yarn:
+
+  ```shell
+  cd node-server
+  yarn install
+  yarn start
+  ```
+
+- To run with Docker Compose (both services):
+
+  ```shell
+  docker compose up --build
+  ```
+
+The Node server will be available at `http://localhost:8001`.
+
 ## API Routes
 
 The FastAPI server provides the following API routes:
